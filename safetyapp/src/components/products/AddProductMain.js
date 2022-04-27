@@ -7,6 +7,7 @@ import { createProduct } from "./../../Redux/Actions/ProductActions";
 import Toast from "../LoadingError/Toast";
 import Message from "../LoadingError/Error";
 import Loading from "../LoadingError/Loading";
+import Map from './geolocated';
 
 const ToastObjects = {
   pauseOnFocusLoss: false,
@@ -79,6 +80,10 @@ const AddProductMain = () => {
                       onChange={(e) => setDescription(e.target.value)}
                     />
                   </div>
+
+
+                  <Map />
+
                   <div className="mb-4">
                     <label htmlFor="product_latitude" className="form-label">
                       Latitude
