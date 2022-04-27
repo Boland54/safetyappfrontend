@@ -1,0 +1,46 @@
+.twenty, .nineteen {
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statss p {
+    text-align: center;
+}
+
+.statss {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.acc {
+    color: #000;
+    font-size: 100px;
+    text-align: center;
+    top: 0;
+    margin-top: 0%;
+  }
+
+  .back-container {
+    background: url('../images/caution.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
