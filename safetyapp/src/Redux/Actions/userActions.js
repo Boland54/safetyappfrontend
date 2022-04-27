@@ -28,7 +28,7 @@ export const register = (name, email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `/api/users`,
+      `https://safetyappbackend.herokuapp.com/api/users`,
       { name, email, password },
       config
     );
@@ -65,7 +65,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `/api/users/login`,
+      `https://safetyappbackend.herokuapp.com/api/users/login`,
       { email, password },
       config
     );
@@ -117,7 +117,7 @@ export const listUser = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/api/users`, config);
+    const { data } = await axios.get(`https://safetyappbackend.herokuapp.com/api/users`, config);
 
     dispatch({ type: USER_LIST_SUCCESS, payload: data });
   } catch (error) {
