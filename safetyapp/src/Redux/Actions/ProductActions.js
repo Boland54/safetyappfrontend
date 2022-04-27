@@ -32,7 +32,7 @@ export const listProducts = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/api/reports/all`, config);
+    const { data } = await axios.get(`https://safetyappbackend.herokuapp.com/api/reports/all`, config);
 
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
@@ -65,7 +65,7 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
       },
     };
 
-    await axios.delete(`/api/reports/${id}`, config);
+    await axios.delete(`https://safetyappbackend.herokuapp.com/api/reports/${id}`, config);
 
     dispatch({ type: PRODUCT_DELETE_SUCCESS });
   } catch (error) {
@@ -101,7 +101,7 @@ export const createProduct =
       };
 
       const { data } = await axios.post(
-        `/api/reports/`,
+        `https://safetyappbackend.herokuapp.com/api/reports/`,
         { description, imagerep, latitude,longitude },
         config
       );
@@ -126,7 +126,7 @@ export const createProduct =
 export const editProduct = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_EDIT_REQUEST });
-    const { data } = await axios.get(`/api/reports/${id}`);
+    const { data } = await axios.get(`https://safetyappbackend.herokuapp.com/api/reports/${id}`);
     dispatch({ type: PRODUCT_EDIT_SUCCESS, payload: data });
   } catch (error) {
     const message =
@@ -160,7 +160,7 @@ export const updateProduct = (product) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.put(
-      `/api/reports/${product._id}`,
+      `https://safetyappbackend.herokuapp.com/api/reports/${product._id}`,
       product,
       config
     );
