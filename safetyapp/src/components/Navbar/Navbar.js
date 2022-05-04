@@ -39,12 +39,11 @@ const Navbar = () => {
   return (
     <AppBar className={classes.appBar} position="static" color="dark">
       <Link to="/" className={classes.brandContainer}>
-        <img className={classes.navimg} component={Link} to="/" src={weblogo}  width="200px" />
+        <img className={classes.navimg} component={Link} to="/" src={weblogo} width="200px" />
       </Link>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
           <div className={classes.profile}>
-            <Typography className={classes.userName} variant="h6">{user?.result.name}</Typography>
             <Button variant="contained" className={classes.logout} color="secondary" component={Link} to="/">Reports</Button>
             <Button variant="contained" className={classes.logout} color="secondary" component={Link} to="/accidents">Accidents</Button>
             <Button variant="contained" className={classes.logitout} color="secondary" onClick={logout}>Logout</Button>
