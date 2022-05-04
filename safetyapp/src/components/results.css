@@ -121,4 +121,40 @@
     .pricing__container-card:hover {
       transform: none;
     }
+
+    
   }
+
+  @media screen and (max-width: 800px) {
+    .pricing__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .pricing__container-card {
+      width: 90%;
+    }
+  
+    .pricing__wrapper {
+      margin: 0 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing__container-card:nth-child(2) {
+      transform: scale(1);
+      background: #fff000;
+      margin: 24px;
+    }
+  
+    .pricing__container-card:hover {
+      transform: none;
+    }
+
+    
+  }
+  

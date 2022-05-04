@@ -17,9 +17,8 @@ function Results() {
                 <div className='icon'>
                   <GiInternalInjury />
                 </div>
-                <h3>2020</h3>
-                <h4>7417</h4>
-                <p>total per year</p>
+                <h3 className='hh'>2020</h3>
+                <h4 className='hhh'>7417</h4>
                 <ul className='pricing__container-features'>
                   <li>1,715 Health and Social Work</li>
                   <li>1,255 Manufacturing</li>
@@ -36,7 +35,6 @@ function Results() {
                 </div>
                 <h3>Past 2 Years</h3>
                 <h4>16,752</h4>
-                <p>in total</p>
                 <ul className='pricing__container-features'>
                   <li>3,619 Health and Social Work</li>
                   <li>3,179 Manufacturing</li>
@@ -53,7 +51,6 @@ function Results() {
                 </div>
                 <h3>2019</h3>
                 <h4>9335</h4>
-                <p>total per year</p>
                 <ul className='pricing__container-features'>
                   <li>1,904 Health and Social Work</li>
                   <li>1,464 Manufacturing</li>
