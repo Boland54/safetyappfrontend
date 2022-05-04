@@ -44,12 +44,12 @@ const Navbar = () => {
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
           <div className={classes.profile}>
-            <Button variant="contained" className={classes.logout} color="secondary" component={Link} to="/">Reports</Button>
-            <Button variant="contained" className={classes.logout} color="secondary" component={Link} to="/accidents">Accidents</Button>
-            <Button variant="contained" className={classes.logitout} color="secondary" onClick={logout}>Logout</Button>
+            <Button variant="contained" className={classes.logout}  component={Link} to="/">Reports</Button>
+            <Button variant="contained" className={classes.logout}  component={Link} to="/accidents">Accidents</Button>
+            <Button variant="contained" className={classes.logitout}  onClick={logout}>Logout</Button>
           </div>
         ) : (
-          <Button component={Link} to="/auth" variant="contained">Sign In</Button>
+          <Button component={Link} to="/auth" variant="contained" className={classes.logout}>Sign In</Button>
         )}
       </Toolbar>
     </AppBar>

@@ -7,7 +7,6 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 import Creator from './components/CreatorOrTag/CreatorOrTag';
-import First from './screens/HomePage';
 import Accidents from './screens/Accidents/Accidents';
 import Precaution from './screens/Precaution/Precaution';
 
@@ -19,7 +18,6 @@ const App = () => {
       <Container maxWidth="xl">
         <Navbar />
         <Switch>
-        <Route path="/first" component={First} exact />
 
         <Route path='/accidents' component={Accidents} />
           <Route path='/precaution' component={ Precaution } />        
