@@ -2,9 +2,6 @@ import React from 'react';
 import { Button } from './Button';
 import './results.css';
 import { GiInternalInjury } from 'react-icons/gi';
-import { GiRingingBell } from 'react-icons/gi';
-
-import { GiLadder } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
