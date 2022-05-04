@@ -80,7 +80,7 @@ const Report = ({ report, setCurrentId }) => {
 
         <Typography className={classes.title} gutterBottom variant="h5" component="h2">{report.title}</Typography>
         <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">{report.message.split(' ').splice(0, 20).join(' ')}...</Typography>
+          <Typography variant="body2" color="textSecondary" component="p">{report.message.split(' ').splice(0, 20).join(' ')}</Typography>
         </CardContent>
       </ButtonBase>
       <CardActions className={classes.cardActions}>
